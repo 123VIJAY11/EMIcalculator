@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDFBFB"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/emi"
+            android:textSize="@dimen/_25ssp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_20ssp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:id="@+id/input_layout_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/edtPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="phone"
+                    android:hint="@string/hint_principal"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#8D6E63"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/input_layout_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="phone"
+                    android:hint="@string/hint_interest"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_layout_tenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtYears"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="phone"
+                    android:hint="@string/hint_month"
+                    android:inputType="number"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btncalculate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:backgroundTint="#DD2C00"
+                android:text="@string/calculate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/input_layout_total_Interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_18sdp">
+
+                <TextView
+                    android:id="@+id/txtPrincipalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/principal"
+                    android:textColorHint="#8D6E63"
+                    android:textSize="@dimen/_18sdp"
+                    tools:ignore="TextSizeCheck,TextViewEdits,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/txtEmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="phone"
+                    android:inputType="number"
+                    android:maxEms="0"
+                    android:text="@string/emi_total"
+                    android:textColorHint="#8D6E63"
+                    android:textSize="@dimen/_15ssp"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextViewEdits,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/txtTotalInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_interest"
+                    android:textColorHint="#8D6E63"
+                    android:textSize="@dimen/_18sdp"
+                    tools:ignore="TextSizeCheck,TextViewEdits,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/txtTotalPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Payment"
+                    android:textColorHint="#8D6E63"
+                    android:textSize="@dimen/_18sdp"
+                    tools:ignore="TextSizeCheck,TextViewEdits,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

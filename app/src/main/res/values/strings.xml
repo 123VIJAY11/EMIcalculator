@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Emi</string>
+    <string name="hint_principal">Principal Amount ₹</string>
+    <string name="hint_interest">Interest rate per Year %</string>
+    <string name="hint_month">How Many Month</string>
+    <string name="hint_emi">EMI ₹</string>
+    <string name="hint_interest_total">Total Interest for Loan ₹</string>
+    <string name="calculate">Calculate</string>
+    <string name="emi">EMI</string>
+    <string name="interest_total">interest_total</string>
+    <string name="emi_total">EMI</string>
+    <string name="principal">Principal</string>
+    <string name="total_interest">Total Interest</string>
+</resources>
